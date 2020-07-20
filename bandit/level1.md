@@ -5,7 +5,7 @@ The password for the next level is stored in a file called readme located in the
 ## Solution
 
 ```bash
-$ ssh bandit1@bandit.labs.overthewire.org -p 2220
+$ ssh bandit0@bandit.labs.overthewire.org -p 2220
 $ cat readme
 boJ9jbbUNNfktd78OOpsqOltutMc3MY1
 ```
