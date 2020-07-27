@@ -1,6 +1,6 @@
 # Level 15
 
-The password for the next level can be retrieved by submitting the password of the current level to port 30000 on localhost.
+The password for the next level can be retrieved by submitting the password of the current level to port 30001 on localhost using SSL encryption.
 
 ## Solution
 
