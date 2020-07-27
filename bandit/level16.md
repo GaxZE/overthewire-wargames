@@ -5,7 +5,7 @@ The credentials for the next level can be retrieved by submitting the password o
 ## Solution
 
 ```bash
-$ ssh $ bandit16@bandit.labs.overthewire.org -p 2220
+$ ssh bandit16@bandit.labs.overthewire.org -p 2220
 $ bandit16@bandit:~$ nmap -v -sT -A -p 31000-32000 localhost
 
 Starting Nmap 7.40 ( https://nmap.org ) at 2020-07-27 17:47 CEST
