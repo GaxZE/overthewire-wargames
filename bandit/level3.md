@@ -4,7 +4,7 @@ The password for the next level is stored in a hidden file in the inhere directo
 
 ## Solution
 
-```bash
+```console
 ssh bandit3@bandit.labs.overthewire.org -p 2220
 ls -la inhere/
 cat .hidden

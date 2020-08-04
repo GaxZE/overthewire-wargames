@@ -6,7 +6,7 @@ NOTE: if you have solved this level and see ‘Byebye!’ when trying to log int
 
 ## Solution
 
-```bash
+```console
 ssh bandit17@bandit.labs.overthewire.org -p 2220
 bandit17@bandit:~$ diff passwords.old passwords.new
 42c42

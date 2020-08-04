@@ -4,7 +4,7 @@ To gain access to the next level, you should use the setuid binary in the homedi
 
 ## Solution
 
-```bash
+```console
 ssh bandit19@bandit.labs.overthewire.org -p 2220
 bandit19@bandit:~$ ./bandit20-do
 Run a command as another user.

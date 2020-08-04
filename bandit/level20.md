@@ -7,13 +7,13 @@ There is a setuid binary in the homedirectory that does the following: it makes 
 Open two terminals. 
 
 Terminal 1:
-```bash
+```console
 ssh bandit20@bandit.labs.overthewire.org -p 2220
 bandit20@bandit:~$ nc -l localhost -p 1212 < /etc/bandit_pass/bandit20
 ```
 
 Terminal 2:
-```bash
+```console
 ssh bandit20@bandit.labs.overthewire.org -p 2220
 bandit20@bandit:~$ ls -la
 total 32
@@ -27,7 +27,7 @@ bandit20@bandit:~$ ./suconnect 1212
 ```
 
 Terminal one will then return a password:
-```bash
+```console
 bandit20@bandit:~$ nc -l localhost -p 1212 < /etc/bandit_pass/bandit20
 gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
 ```

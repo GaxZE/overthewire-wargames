@@ -4,7 +4,7 @@ The password for the next level is stored in /etc/bandit_pass/bandit14 and can o
 
 ## Solution
 
-```bash
+```console
 ssh bandit13@bandit.labs.overthewire.org -p 2220
 bandit13@bandit:~$ ls -la
 total 24

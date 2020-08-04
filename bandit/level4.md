@@ -4,7 +4,7 @@ The password for the next level is stored in the only human-readable file in the
 
 ## Solution
 
-```bash
+```console
 ssh bandit4@bandit.labs.overthewire.org -p 2220
 find inhere/ -type f -exec file {} +
 inhere/-file01: data

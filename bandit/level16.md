@@ -4,7 +4,7 @@ The credentials for the next level can be retrieved by submitting the password o
 
 ## Solution
 
-```bash
+```console
 ssh bandit16@bandit.labs.overthewire.org -p 2220
 bandit16@bandit:~$ nmap -v -sT -A -p 31000-32000 localhost
 

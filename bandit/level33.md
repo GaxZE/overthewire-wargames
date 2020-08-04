@@ -4,7 +4,7 @@ The password for the next level can be retrieved by submitting the password of t
 
 ## Solution
 
-```bash
+```console
 ssh bandit33@bandit.labs.overthewire.org -p 2220
 
 ```

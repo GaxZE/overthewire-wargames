@@ -8,7 +8,7 @@ The password for the next level is stored somewhere on the server and has all of
 
 ## Solution
 
-```bash
+```console
 ssh bandit6@bandit.labs.overthewire.org -p 2220
 find / -group bandit6 -user bandit7 -size 33c 2>/dev/null
 /var/lib/dpkg/info/bandit7.password

@@ -4,7 +4,7 @@ A daemon is listening on port 30002 and will give you the password for bandit25 
 
 ## Solution
 
-```bash
+```console
 ssh bandit24@bandit.labs.overthewire.org -p 2220
 bandit24@bandit:~$ mkdir /tmp/dir
 bandit24@bandit:~$ cd /tmp/dir
@@ -13,7 +13,7 @@ bandit24@bandit:/tmp/dir$ nano script.sh
 
 I then needed to create a dictionary. This dictionary would have the current password + a 4 digit code. Since we do not know the 4 digit code, we need to print all possible variations.
 
-```bash
+```console
 
 #!/bin/bash
 passwd="UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ"
@@ -36,14 +36,14 @@ done
 
 Then I will need to run the script:
 
-```bash
+```console
 bandit24@bandit:/tmp/dir$ chmod 777 script.sh
 bandit24@bandit:/tmp/dir$ ./script.sh
 bandit24@bandit:/tmp/dir$ cat dictionary.txt
 ```
 
 Returns a large file with all possible combinations:
-```bash
+```console
 ...
 UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ 9957
 UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ 9958
@@ -64,13 +64,13 @@ UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ 9970
 
 We then need to use netcat on port `30002` and pipe in the `dictionary.txt`:
 
-```bash
+```console
 bandit24@bandit:/tmp/dir$ cat dictionary.txt | nc localhost 30002 >> password.txt
 ```
 
 Seeing as our password file will have many incorrect entries, we should sort it.
 
-```bash
+```console
 bandit24@bandit:/tmp/pppp$ sort -u password.txt
 
 Correct!

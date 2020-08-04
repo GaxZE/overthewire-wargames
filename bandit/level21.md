@@ -4,7 +4,7 @@ A program is running automatically at regular intervals from cron, the time-base
 
 ## Solution
 
-```bash
+```console
 ssh bandit21@bandit.labs.overthewire.org -p 2220
 bandit21@bandit:~$ cat /etc/cron.d/
 cronjob_bandit15_root  cronjob_bandit22       cronjob_bandit24       .placeholder

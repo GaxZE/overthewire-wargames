@@ -8,7 +8,7 @@ The password for the next level is stored in a file somewhere under the inhere d
 
 ## Solution
 
-```bash
+```console
 ssh bandit5@bandit.labs.overthewire.org -p 2220
 find inhere/ -type f -size 1033c -exec file {} +
 inhere/maybehere07/.file2: ASCII text, with very long lines

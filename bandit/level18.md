@@ -4,7 +4,7 @@ The password for the next level is stored in a file readme in the homedirectory.
 
 ## Solution
 
-```bash
+```console
 ssh bandit18@bandit.labs.overthewire.org -p 2220
 Byebye !
 Connection to localhost closed.

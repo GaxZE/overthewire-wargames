@@ -4,7 +4,7 @@ The password for the next level is stored in the file data.txt, which is a hexdu
 
 ## Solution
 
-```bash
+```console
 ssh bandit12@bandit.labs.overthewire.org -p 2220
 bandit12@bandit:~$ ls -la
 total 24
