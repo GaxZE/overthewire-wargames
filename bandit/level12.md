@@ -5,8 +5,8 @@ The password for the next level is stored in the file data.txt, which is a hexdu
 ## Solution
 
 ```bash
-$ ssh $ bandit12@bandit.labs.overthewire.org -p 2220
-$ bandit12@bandit:~$ ls -la
+ssh bandit12@bandit.labs.overthewire.org -p 2220
+bandit12@bandit:~$ ls -la
 total 24
 drwxr-xr-x  2 root     root     4096 May  7 20:14 .
 drwxr-xr-x 41 root     root     4096 May  7 20:14 ..
@@ -14,17 +14,17 @@ drwxr-xr-x 41 root     root     4096 May  7 20:14 ..
 -rw-r--r--  1 root     root     3526 May 15  2017 .bashrc
 -rw-r-----  1 bandit13 bandit12 2582 May  7 20:14 data.txt
 -rw-r--r--  1 root     root      675 May 15  2017 .profile
-$ bandit12@bandit:~$ mkdir /tmp/workout
-$ bandit12@bandit:~$ cd /tmp/workout
-$ bandit12@bandit:/tmp/workout$ cp ~/data.txt .
-$ bandit12@bandit:/tmp/workout$ ls -la
+bandit12@bandit:~$ mkdir /tmp/workout
+bandit12@bandit:~$ cd /tmp/workout
+bandit12@bandit:/tmp/workout$ cp ~/data.txt .
+bandit12@bandit:/tmp/workout$ ls -la
 total 776
 drwxr-sr-x    2 bandit12 root   4096 Jul 27 14:53 .
 drwxrws-wt 3907 root     root 782336 Jul 27 14:53 ..
 -rw-r-----    1 bandit12 root   2582 Jul 27 14:53 data.txt
-$ bandit12@bandit:/tmp/workout$ file data.txt
+bandit12@bandit:/tmp/workout$ file data.txt
 data.txt: ASCII text
-$ bandit12@bandit:/tmp/workout$ cat data.txt
+bandit12@bandit:/tmp/workout$ cat data.txt
 00000000: 1f8b 0808 0650 b45e 0203 6461 7461 322e  .....P.^..data2.
 00000010: 6269 6e00 013d 02c2 fd42 5a68 3931 4159  bin..=...BZh91AY
 00000020: 2653 598e 4f1c c800 001e 7fff fbf9 7fda  &SY.O...........
@@ -63,8 +63,8 @@ $ bandit12@bandit:/tmp/workout$ cat data.txt
 00000230: b15b bcea 7109 5c29 c524 3afc d715 4894  .[..q.\).$:...H.
 00000240: 7426 072f fc28 ab05 9603 b3fc 5dc9 14e1  t&./.(......]...
 00000250: 4242 393c 7320 98f7 681d 3d02 0000       BB9<s ..h.=...
-$ bandit12@bandit:/tmp/workout$ xxd -r data.txt xxd.txt
-$ bandit12@bandit:/tmp/workout$ cat xxd.txt
+bandit12@bandit:/tmp/workout$ xxd -r data.txt xxd.txt
+bandit12@bandit:/tmp/workout$ cat xxd.txt
 P�^data2.bin=��BZh91AY&SY�O����ڞOv���}?��}��^���������ߣ��;����4��h�F�F��4LM
 @��z��FM��C�hF�C@�4@f��h
 4hh�=C%�>X,�k���1��GY�� ��i�hPh�Mh
@@ -75,57 +75,57 @@ P�^data2.bin=��BZh91AY&SY�O����ڞOv���}?��}��^�
       wO�R����6�XS{�
 ��9?L�P�yB��=z�m?�L�Nt*�7{qP��̜�%"�w9�qm4� N3�6���K��H䋑[��}!
                                                             d��3A4$�M~�\�ɠJ�C�kUƦ\���\�FSN��&=�[��q	\)�$:��H�t&/�(����]��BB9<s ��h=
-$ bandit12@bandit:/tmp/workout$ file xxd.txt
+bandit12@bandit:/tmp/workout$ file xxd.txt
 xxd.txt: gzip compressed data, was "data2.bin", last modified: Thu May  7 18:14:30 2020, max compression, from Unix
-$ bandit12@bandit:/tmp/workout$ ls -la
+bandit12@bandit:/tmp/workout$ ls -la
 total 780
 drwxr-sr-x    2 bandit12 root   4096 Jul 27 14:59 .
 drwxrws-wt 3910 root     root 782336 Jul 27 15:01 ..
 -rw-r-----    1 bandit12 root   2582 Jul 27 14:53 data.txt
 -rw-r--r--    1 bandit12 root    606 Jul 27 14:59 xxd.txt
-$ bandit12@bandit:/tmp/workout$ mv xxd.txt xxd.gz
-$ bandit12@bandit:/tmp/workout$ gzip -d xxd.gz
-$ bandit12@bandit:/tmp/workout$ ls -la
+bandit12@bandit:/tmp/workout$ mv xxd.txt xxd.gz
+bandit12@bandit:/tmp/workout$ gzip -d xxd.gz
+bandit12@bandit:/tmp/workout$ ls -la
 total 780
 drwxr-sr-x    2 bandit12 root   4096 Jul 27 15:01 .
 drwxrws-wt 3910 root     root 782336 Jul 27 15:01 ..
 -rw-r-----    1 bandit12 root   2582 Jul 27 14:53 data.txt
 -rw-r--r--    1 bandit12 root    573 Jul 27 14:59 xxd
-$ bandit12@bandit:/tmp/workout$ file xxd
+bandit12@bandit:/tmp/workout$ file xxd
 xxd: bzip2 compressed data, block size = 900k
-$ bandit12@bandit:/tmp/workout$ mv xxd xxd.bz2
-$ bandit12@bandit:/tmp/workout$ bzip2 -d xxd.bz2
-$ bandit12@bandit:/tmp/workout$ ls -la
+bandit12@bandit:/tmp/workout$ mv xxd xxd.bz2
+bandit12@bandit:/tmp/workout$ bzip2 -d xxd.bz2
+bandit12@bandit:/tmp/workout$ ls -la
 total 780
 drwxr-sr-x    2 bandit12 root   4096 Jul 27 15:02 .
 drwxrws-wt 3910 root     root 782336 Jul 27 15:02 ..
 -rw-r-----    1 bandit12 root   2582 Jul 27 14:53 data.txt
 -rw-r--r--    1 bandit12 root    431 Jul 27 14:59 xxd
-$ bandit12@bandit:/tmp/workout$ file xxd
+bandit12@bandit:/tmp/workout$ file xxd
 xxd: gzip compressed data, was "data4.bin", last modified: Thu May  7 18:14:30 2020, max compression, from Unix
-$ bandit12@bandit:/tmp/workout$ mv xxd xxd.gz
-$ bandit12@bandit:/tmp/workout$ gzip -d xxd
-$ bandit12@bandit:/tmp/workout$ ls -la
+bandit12@bandit:/tmp/workout$ mv xxd xxd.gz
+bandit12@bandit:/tmp/workout$ gzip -d xxd
+bandit12@bandit:/tmp/workout$ ls -la
 total 796
 drwxr-sr-x    2 bandit12 root   4096 Jul 27 15:02 .
 drwxrws-wt 3910 root     root 782336 Jul 27 15:02 ..
 -rw-r-----    1 bandit12 root   2582 Jul 27 14:53 data.txt
 -rw-r--r--    1 bandit12 root  20480 Jul 27 14:59 xxd
-$ bandit12@bandit:/tmp/workout$ file xxd
+bandit12@bandit:/tmp/workout$ file xxd
 xxd: POSIX tar archive (GNU)
-$ bandit12@bandit:/tmp/workout$ mv xxd xxd.tar
-$ bandit12@bandit:/tmp/workout$ tar xvf xxd.tar
+bandit12@bandit:/tmp/workout$ mv xxd xxd.tar
+bandit12@bandit:/tmp/workout$ tar xvf xxd.tar
 data5.bin
-$ bandit12@bandit:/tmp/workout$ file data5.bin
+bandit12@bandit:/tmp/workout$ file data5.bin
 data5.bin: POSIX tar archive (GNU)
-$ bandit12@bandit:/tmp/workout$ mv data5.bin data5.bin.tar
-$ bandit12@bandit:/tmp/workout$ tar xvf data5.bin.tar
+bandit12@bandit:/tmp/workout$ mv data5.bin data5.bin.tar
+bandit12@bandit:/tmp/workout$ tar xvf data5.bin.tar
 data6.bin
-$ bandit12@bandit:/tmp/workout$ file data6.bin
+bandit12@bandit:/tmp/workout$ file data6.bin
 data6.bin: bzip2 compressed data, block size = 900k
-$ bandit12@bandit:/tmp/workout$ mv data6.bin data6.bz2
-$ bandit12@bandit:/tmp/workout$ bzip2 -d data6.bz2
-$ bandit12@bandit:/tmp/workout$ ls -la
+bandit12@bandit:/tmp/workout$ mv data6.bin data6.bz2
+bandit12@bandit:/tmp/workout$ bzip2 -d data6.bz2
+bandit12@bandit:/tmp/workout$ ls -la
 total 820
 drwxr-sr-x    2 bandit12 root   4096 Jul 27 15:04 .
 drwxrws-wt 3910 root     root 782336 Jul 27 15:04 ..
@@ -133,19 +133,19 @@ drwxrws-wt 3910 root     root 782336 Jul 27 15:04 ..
 -rw-r--r--    1 bandit12 root  10240 May  7 20:14 data6
 -rw-r-----    1 bandit12 root   2582 Jul 27 14:53 data.txt
 -rw-r--r--    1 bandit12 root  20480 Jul 27 14:59 xxd.tar
-$ bandit12@bandit:/tmp/workout$ file data6
+bandit12@bandit:/tmp/workout$ file data6
 data6: POSIX tar archive (GNU)
-$ bandit12@bandit:/tmp/workout$ mv data6 data6.tar
-$ bandit12@bandit:/tmp/workout$ tar xvf data6.tar
+bandit12@bandit:/tmp/workout$ mv data6 data6.tar
+bandit12@bandit:/tmp/workout$ tar xvf data6.tar
 data8.bin
-$ bandit12@bandit:/tmp/workout$ file data8.bin
+bandit12@bandit:/tmp/workout$ file data8.bin
 data8.bin: gzip compressed data, was "data9.bin", last modified: Thu May  7 18:14:30 2020, max compression, from Unix
-$ bandit12@bandit:/tmp/workout$ mv data8.bin data8.gz
-$ bandit12@bandit:/tmp/workout$ gzip -d data8.gz
-$ bandit12@bandit:/tmp/workout$ ls -a
+bandit12@bandit:/tmp/workout$ mv data8.bin data8.gz
+bandit12@bandit:/tmp/workout$ gzip -d data8.gz
+bandit12@bandit:/tmp/workout$ ls -a
 .  ..  data5.bin.tar  data6.tar  data8  data.txt  xxd.tar
-$ bandit12@bandit:/tmp/workout$ file data8
+bandit12@bandit:/tmp/workout$ file data8
 data8: ASCII text
-$ bandit12@bandit:/tmp/workout$ cat data8
+bandit12@bandit:/tmp/workout$ cat data8
 The password is 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
 ```

@@ -5,8 +5,8 @@ The password for the next level is stored in the only human-readable file in the
 ## Solution
 
 ```bash
-$ ssh bandit4@bandit.labs.overthewire.org -p 2220
-$ find inhere/ -type f -exec file {} +
+ssh bandit4@bandit.labs.overthewire.org -p 2220
+find inhere/ -type f -exec file {} +
 inhere/-file01: data
 inhere/-file00: data
 inhere/-file06: data
@@ -17,6 +17,6 @@ inhere/-file04: data
 inhere/-file07: ASCII text
 inhere/-file02: data
 inhere/-file09: data
-$ cat inhere/-file07
+cat inhere/-file07
 koReBOKuIDDepwhWk7jZC0RTdopnAYKh
 ```

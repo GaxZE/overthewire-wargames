@@ -5,7 +5,7 @@ The password for the next level is stored in a file called spaces in this filena
 ## Solution
 
 ```bash
-$ ssh bandit2@bandit.labs.overthewire.org -p 2220
-$ cat spaces\ in\ this\ filename
+ssh bandit2@bandit.labs.overthewire.org -p 2220
+cat spaces\ in\ this\ filename
 UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
 ```

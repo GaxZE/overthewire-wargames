@@ -5,8 +5,8 @@ The password for the next level can be retrieved by submitting the password of t
 ## Solution
 
 ```bash
-$ ssh bandit15@bandit.labs.overthewire.org -p 2220
-$ bandit15@bandit:~$ ls -la
+ssh bandit15@bandit.labs.overthewire.org -p 2220
+bandit15@bandit:~$ ls -la
 total 24
 drwxr-xr-x  2 root     root     4096 May 14 13:40 .
 drwxr-xr-x 41 root     root     4096 May  7 20:14 ..

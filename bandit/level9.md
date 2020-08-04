@@ -5,8 +5,8 @@ The password for the next level is stored in the file data.txt in one of the few
 ## Solution
 
 ```bash
-$ ssh bandit9@bandit.labs.overthewire.org -p 2220
-$ strings data.txt  | grep ==== -a
+ssh bandit9@bandit.labs.overthewire.org -p 2220
+strings data.txt  | grep ==== -a
 ========== the*2i"4
 ========== password
 Z)========== is

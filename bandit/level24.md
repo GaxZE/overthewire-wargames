@@ -5,10 +5,10 @@ A daemon is listening on port 30002 and will give you the password for bandit25 
 ## Solution
 
 ```bash
-$ ssh bandit24@bandit.labs.overthewire.org -p 2220
-$ bandit24@bandit:~$ mkdir /tmp/dir
-$ bandit24@bandit:~$ cd /tmp/dir
-$ bandit24@bandit:/tmp/dir$ nano script.sh
+ssh bandit24@bandit.labs.overthewire.org -p 2220
+bandit24@bandit:~$ mkdir /tmp/dir
+bandit24@bandit:~$ cd /tmp/dir
+bandit24@bandit:/tmp/dir$ nano script.sh
 ```
 
 I then needed to create a dictionary. This dictionary would have the current password + a 4 digit code. Since we do not know the 4 digit code, we need to print all possible variations.
@@ -37,9 +37,9 @@ done
 Then I will need to run the script:
 
 ```bash
-$ bandit24@bandit:/tmp/dir$ chmod 777 script.sh
-$ bandit24@bandit:/tmp/dir$ ./script.sh
-$ bandit24@bandit:/tmp/dir$ cat dictionary.txt
+bandit24@bandit:/tmp/dir$ chmod 777 script.sh
+bandit24@bandit:/tmp/dir$ ./script.sh
+bandit24@bandit:/tmp/dir$ cat dictionary.txt
 ```
 
 Returns a large file with all possible combinations:
@@ -65,13 +65,13 @@ UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ 9970
 We then need to use netcat on port `30002` and pipe in the `dictionary.txt`:
 
 ```bash
-$ bandit24@bandit:/tmp/dir$ cat dictionary.txt | nc localhost 30002 >> password.txt
+bandit24@bandit:/tmp/dir$ cat dictionary.txt | nc localhost 30002 >> password.txt
 ```
 
 Seeing as our password file will have many incorrect entries, we should sort it.
 
 ```bash
-$ bandit24@bandit:/tmp/pppp$ sort -u password.txt
+bandit24@bandit:/tmp/pppp$ sort -u password.txt
 
 Correct!
 Exiting.

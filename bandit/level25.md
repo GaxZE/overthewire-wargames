@@ -5,10 +5,10 @@ Logging in to bandit26 from bandit25 should be fairly easy… The shell for user
 ## Solution
 
 ```bash
-$ ssh bandit25@bandit.labs.overthewire.org -p 2220
-$ bandit25@bandit:~$ cat /etc/passwd | grep "bandit26"
+ssh bandit25@bandit.labs.overthewire.org -p 2220
+bandit25@bandit:~$ cat /etc/passwd | grep "bandit26"
 bandit26:x:11026:11026:bandit level 26:/home/bandit26:/usr/bin/showtext
-$ bandit25@bandit:~$ cat /usr/bin/showtext
+bandit25@bandit:~$ cat /usr/bin/showtext
 #!/bin/sh
 
 export TERM=linux
@@ -52,7 +52,7 @@ bandit26@bandit:~$
 To restart from bandit26 I've grabbed the password:
 
 ```bash
-$ bandit26@bandit:~$ cat /etc/bandit_pass/bandit26
+bandit26@bandit:~$ cat /etc/bandit_pass/bandit26
 5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z
 ```
 

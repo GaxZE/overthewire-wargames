@@ -5,8 +5,8 @@ The credentials for the next level can be retrieved by submitting the password o
 ## Solution
 
 ```bash
-$ ssh bandit16@bandit.labs.overthewire.org -p 2220
-$ bandit16@bandit:~$ nmap -v -sT -A -p 31000-32000 localhost
+ssh bandit16@bandit.labs.overthewire.org -p 2220
+bandit16@bandit:~$ nmap -v -sT -A -p 31000-32000 localhost
 
 Starting Nmap 7.40 ( https://nmap.org ) at 2020-07-27 17:47 CEST
 NSE: Loaded 143 scripts for scanning.
@@ -196,13 +196,13 @@ vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
 -----END RSA PRIVATE KEY-----
 
 closed
-$ bandit16@bandit:~$ touch /tmp/ssh-private.key
-$ bandit16@bandit:~$ nano /tmp/ssh-private.key
+bandit16@bandit:~$ touch /tmp/ssh-private.key
+bandit16@bandit:~$ nano /tmp/ssh-private.key
 Unable to create directory /home/bandit16/.nano: Permission denied
 It is required for saving/loading search history or cursor positions.
 
 Press Enter to continue
 
-$ bandit16@bandit:~$ chmod 600 /tmp/ssh-private.key
-$ bandit16@bandit:~$ ssh -i /tmp/ssh-private.key bandit17@localhost
+bandit16@bandit:~$ chmod 600 /tmp/ssh-private.key
+bandit16@bandit:~$ ssh -i /tmp/ssh-private.key bandit17@localhost
 ```
