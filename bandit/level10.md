@@ -6,6 +6,6 @@ The password for the next level is stored in the file data.txt, which contains b
 
 ```console
 ssh bandit10@bandit.labs.overthewire.org -p 2220
-cat data.txt | base64 --decode
+bandit10@bandit:~$ cat data.txt | base64 --decode
 The password is IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
 ```
