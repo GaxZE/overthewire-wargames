@@ -7,11 +7,11 @@ NOTE: Looking at shell scripts written by other people is a very useful skill. T
 ## Solution
 
 ```console
-$ ssh bandit22@bandit.labs.overthewire.org -p 2220
-$ bandit22@bandit:~$ cat /etc/cron.d/cronjob_bandit23
+ssh bandit22@bandit.labs.overthewire.org -p 2220
+bandit22@bandit:~$ cat /etc/cron.d/cronjob_bandit23
 @reboot bandit23 /usr/bin/cronjob_bandit23.sh  &> /dev/null
 * * * * * bandit23 /usr/bin/cronjob_bandit23.sh  &> /dev/null
-$ bandit22@bandit:~$ cat /usr/bin/cronjob_bandit23.sh
+bandit22@bandit:~$ cat /usr/bin/cronjob_bandit23.sh
 #!/bin/bash
 
 myname=$(whoami)
