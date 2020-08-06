@@ -1,6 +1,6 @@
 # Level 26
 
-The password for the next level can be retrieved by submitting the password of the current level to port 30000 on localhost.
+Good job getting a shell! Now hurry and grab the password for bandit27!
 
 ## Solution
 
