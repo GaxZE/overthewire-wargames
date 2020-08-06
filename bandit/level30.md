@@ -1,6 +1,8 @@
 # Level 30
 
-The password for the next level can be retrieved by submitting the password of the current level to port 30000 on localhost.
+There is a git repository at ssh://bandit30-git@localhost/home/bandit30-git/repo. The password for the user bandit30-git is the same as for the user bandit30.
+
+Clone the repository and find the password for the next level.
 
 ## Solution
 
