@@ -9,10 +9,10 @@ Use this password to log in to krypton.labs.overthewire.org with username krypto
 ## Solution
 
 ```console
-➜  overthewire-wargames git:(master) echo "S1JZUFRPTklTR1JFQVQ=" | base64 --decode
-KRYPTONISGREAT%
+echo "S1JZUFRPTklTR1JFQVQ=" | base64 --decode
+KRYPTONISGREAT
 
-➜  overthewire-wargames git:(master) ssh krypton1@krypton.labs.overthewire.org -p 2231
+ssh krypton1@krypton.labs.overthewire.org -p 2231
 The authenticity of host '[krypton.labs.overthewire.org]:2231 ([176.9.9.172]:2231)' can't be established.
 ECDSA key fingerprint is SHA256:98UL0ZWr85496EtCRkKlo20X3OPnyPSB5tB5RPbhczc.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
