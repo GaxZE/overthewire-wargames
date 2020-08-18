@@ -42,5 +42,3 @@ mallory:9urtcpzBmH
 # Password
 
 `sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14`
-
-
