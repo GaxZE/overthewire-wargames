@@ -34,4 +34,6 @@ You can find the password for the next level on this page.
 </html>
 ```
 
-Password: `gtVrDuiDfck831PqWsLEZy5gyDz1clto`
+# Password 
+
+`gtVrDuiDfck831PqWsLEZy5gyDz1clto`

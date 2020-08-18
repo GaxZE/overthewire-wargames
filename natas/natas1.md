@@ -42,3 +42,7 @@ next level on this page, but rightclicking has been blocked!
 </html>
 
 ```
+
+# Password
+
+`ZluruAthQk7Q2MqmDeTiUij2ZvWy2mBi`
