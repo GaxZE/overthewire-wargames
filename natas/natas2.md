@@ -1,8 +1,8 @@
 # Natas2
 
 - Username: natas2
-- Password: ZluruAthQk7Q2MqmDeTiUij2ZvWy2mBi
-- URL:      http://natas2.natas.labs.overthewire.org
+- Password: `ZluruAthQk7Q2MqmDeTiUij2ZvWy2mBi`
+- URL: http://natas2.natas.labs.overthewire.org
 
 # Walkthrough
 
