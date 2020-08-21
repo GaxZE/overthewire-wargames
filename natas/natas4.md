@@ -1,7 +1,7 @@
 # Natas4
 
 - Username: natas4
-- Password: Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ
+- Password: `Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ`
 - URL:      http://natas4.natas.labs.overthewire.org
 
 # Walkthrough
