@@ -1,7 +1,7 @@
 # Natas1 
 
 - Username: natas1
-- Password: gtVrDuiDfck831PqWsLEZy5gyDz1clto
+- Password: `gtVrDuiDfck831PqWsLEZy5gyDz1clto`
 - URL:      http://natas1.natas.labs.overthewire.org
 
 # Walkthrough
